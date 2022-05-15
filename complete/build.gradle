@@ -1,0 +1,50 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	maven {
+		url 'https://repo.clojars.org'
+		name 'Clojars'
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    implementation 'dev.the-fireplace:Erroring-Entity-Remover:1.0.2+1.18'
+	implementation 'entity:entity-sql:0.1.2'
+	implementation 'entity:entity-core:0.1.2'
+	implementation 'entity:entity-txn:0.1.4'
+    implementation 'es.molabs:entity-manager:1.0.0'
+    implementation 'org.projectlombok:lombok:1.18.20'
+    implementation 'org.projectlombok:lombok:1.18.20'
+    implementation 'com.banjocreek.riverbed:riverbed-entity:0.7'
+	implementation 'cc.aicode.java.e2e:ExcelToEntity:1.0.0.3'
+	implementation 'org.webjars.npm:entity-decode:2.0.2'
+	implementation 'io.github.starlangsoftware:NamedEntityRecognition:1.0.8'
+	implementation 'io.github.andriamarosoa:Entity:1.0.0'
+	implementation 'se.jguru.shared.test.entity:jguru-shared-entity-test:0.9.1'
+	implementation 'com.github.myth-gourd:entiti:0.0.8.RELEASE'
+	implementation 'com.lugew.winsim:entity:1.0.2-RELEASE'
+	implementation 'net.namekdev.entity_tracker:artemis-entity-tracker:0.3.0'
+	implementation 'se.mithlond.services.shared.test.entity:mithlond-services-shared-entity-test:1.1.0'
+	implementation 'net.namekdev.entity_tracker:artemis-entity-tracker-gui:0.3.0'
+	implementation 'org.ojbc.bundles.utilities:Entity_Resolution_Demo:1.0.1'
+	implementation 'com.gu:content-entity-thrift:2.2.1'
+	annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}

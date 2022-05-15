@@ -1,0 +1,7 @@
+com\example\servingwebcontent\GreetingController.class
+com\todos\Todo.class
+com\demo\entities\USER.class
+com\demo\entities\Product.class
+com\example\servingwebcontent\controller\contUser.class
+com\todos\TodoController.class
+com\example\servingwebcontent\ServingWebContentApplication.class
